@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from "react"
+import Modal from "./Components/Modal";
 
 function App() {
+  const [isOpen, setIsOpen] = useState(true)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Poker Legends Malta</h1>
+      <button 
+        className="border-solid border-2 border-sky-500 rounded-md"
+        onClick={() => setIsOpen(true)}
+      >
+        Open Popup
+      </button>
+      
+      <Modal open={isOpen} onClose={() => setIsOpen(false)}>
+        Popup goes here!
+      </Modal>
     </div>
   );
 }
