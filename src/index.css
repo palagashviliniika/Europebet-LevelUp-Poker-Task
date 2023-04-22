@@ -15,3 +15,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.filter-white{
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(246deg) brightness(103%) contrast(105%);
+}
