@@ -1,10 +1,11 @@
-import React from 'react'
+import React, {useState} from 'react'
 import ReactDOM from 'react-dom'
 import PopupHeader from './PopupHeader'
+import Navigator from './Navigator'
 
 const MODAL_STYLES = {
     position: "fixed",
-    top: "13.3vw",
+    top: "16.3vw",
     left: "50%",
     transform: "translate(-50%, -50%)",
     backgroundColor: "#1C1D1E",
@@ -14,6 +15,8 @@ const MODAL_STYLES = {
 }
 
 export default function Modal({children, open, onClose}) {
+    const [page, setPage] = useState(1)
+
     if (!open) return null
     return ReactDOM.createPortal(
         <>
@@ -21,6 +24,9 @@ export default function Modal({children, open, onClose}) {
             <div style={MODAL_STYLES} className='rounded-xl'>
 
                 <PopupHeader onClose={onClose}/>
+                <div className='px-[2.3vw] py-[1.7vw]'>
+                    <Navigator page={page} setPage={setPage}/>
+                </div>
 
                 {children}
             </div>
