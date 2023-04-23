@@ -2,10 +2,11 @@ import React, {useState} from 'react'
 import ReactDOM from 'react-dom'
 import PopupHeader from './PopupHeader'
 import Navigator from './Navigator'
+import Container from './Container'
 
 const MODAL_STYLES = {
     position: "fixed",
-    top: "16.3vw",
+    top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
     backgroundColor: "#1C1D1E",
@@ -26,6 +27,7 @@ export default function Modal({children, open, onClose}) {
                 <PopupHeader onClose={onClose}/>
                 <div className='px-[2.3vw] py-[1.7vw]'>
                     <Navigator page={page} setPage={setPage}/>
+                    <Container />
                 </div>
 
                 {children}
