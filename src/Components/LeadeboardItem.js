@@ -1,19 +1,19 @@
 import React from 'react'
 
-export default function LeadeboardItem() {
+export default function LeadeboardItem({place, voucher, prize}) {
   return (
-    <div className='bg-main-black-leaderboard w-full rounded-[4vw] border-solid border-2 border-main-black-containers text-white flex justify-around items-center gap-[10vw] py-[0.75vw]'>
-        <div className='bg-main-black-containers border-solid border-2 border-main-black-containers rounded-full flex justify-center w-[1.5vw] h-[1.5vw]'>
+    <div className='bg-main-black-leaderboard w-full rounded-[4vw] font-semibold border-solid border-2 border-main-black-containers text-white flex justify-around items-center gap-[10vw] py-[0.75vw]'>
+        <div className='bg-main-black-containers border-solid border-2 border-main-black-containers rounded-full flex justify-center items-center w-[1.5vw] h-[1.5vw]'>
             <p className='text-sm'>
-                1
+                {place}
             </p>
         </div>
-        <p className='text-sm'>
-            money
+        <p className='text-sm font-bold'>
+            {voucher}
         </p>
         <div>
             <p className='text-sm'>
-                A კატეგორიის საგზური
+                {prize}
             </p>
         </div>
     </div>

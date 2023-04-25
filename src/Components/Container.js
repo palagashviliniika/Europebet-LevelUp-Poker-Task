@@ -1,13 +1,17 @@
 import React from 'react'
-import LeadeboardItem from './LeadeboardItem'
+import LeaderboardContainer from './LeaderboardContainer'
+import PrizeContainer from './PrizeContainer'
 
 export default function Container() {
   return (
-    <div className='w-full mt-[1.6vw] rounded-2xl bg-main-black-containers '>
-        <div className='rounded-t-2xl border-solid border-2 border-main-black-containers flex justify-center'>
+    <div className='w-full mt-[1.6vw] rounded-2xl bg-main-black-containers relative overflow-hidden'>
+        <div className='rounded-t-2xl border-solid border-2 border-main-black-containers flex flex-col items-center'>
             <h1 className='text-white text-lg font-semibold py-[0.9vw]'>
                 1₾ რეიკი = 1 ქულას
             </h1>
+            <div className='bg-main-orange shadow-main-orange shadow-lg w-1/4 h-2 rounded-b-md absolute top-[-4px]'>
+                
+            </div>
         </div>
 
         <div className='bg-main-black-subContainers rounded-b-2xl border-solid border-2 border-main-black-icons'>
@@ -22,29 +26,17 @@ export default function Container() {
                 </div>
             </div>
 
-            <div className='bg-main-black-icons rounded-xl mx-[1.3vw]'>
-                <div className='text-main-black-text text-sm flex justify-around gap-[12.5vw] pt-[1.7vw] pr-[6.5vw] pl-[2.2vw]'>
-                    <p>
-                        ადგილი
-                    </p>
-                    <div className='flex items-center gap-1.5'>
-                        <img src='/example-icon.png' alt='voucher' />
-                        <p>
-                            ვაუჩერი
-                        </p>
-                        {/* <img src='/voucher.svg' alt='voucher' className='filter-white' /> */}
-                    </div>
-                    <p>
-                        პრიზი
-                    </p>
-                </div>
-                <div className='flex flex-col items-center mt-[1vw] mx-[1.7vw] gap-1'>
-                    <LeadeboardItem />
-                    <LeadeboardItem />
-                    <LeadeboardItem />
-                </div>
-            </div>
+            {/* LeaderBoard */}
+            <LeaderboardContainer />
+            <PrizeContainer />
+            <LeaderboardContainer />
+            <PrizeContainer />
+
+            <p className='text-white text-sm text-center mb-3'>
+            * ლიდერბორდის შედეგები განახლდება <span className='text-main-orange underline'>პოკერის ლობიში</span>
+            </p>
         </div>
+
     </div>
   )
 }

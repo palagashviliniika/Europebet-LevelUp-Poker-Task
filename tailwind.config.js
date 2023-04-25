@@ -13,13 +13,22 @@ module.exports = {
           containers: "#2C3234",
           subContainers: "#171718",
           text: "#7D7D7D",
-          leaderboard: "#1E2122"
+          leaderboard: "#1E2122",
+          prize: "#202324",
+          play: "#171718"
         },
         'main-orange': {
           DEFAULT: "#EF5A21"
+        },
+        'services': {
+          DEFAULT: "#0D649B",
+          orange: "#EF541C",
+          purple: "#1A176C"
         }
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide')
+  ],
 }

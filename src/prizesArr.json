@@ -1,0 +1,17 @@
+[
+    {
+        "id": "1",
+        "icon": "/travel-icon-sm.png",
+        "prize": "The Festival in Malta-ს საგზური"
+    },
+    {
+        "id": "2",
+        "icon": "/ticket-icon-sm.png",
+        "prize": "სპეციალური ტურნირის „Cashgame Sharks” ბილეთი, სადაც გათამაშდება The Festival in Malta-ს საგზური"
+    },
+    {
+        "id": "3",
+        "icon": "/ticket-icon-sm.png",
+        "prize": "ტექნიკის მაღაზიის ვაუჩერი"
+    }
+]

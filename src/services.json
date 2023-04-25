@@ -1,0 +1,30 @@
+[
+    {
+        "id": "1",
+        "img": "/Rounded Rectangle 1.png",
+        "title": "Get 300% Cashback",
+        "description": "retrieve 300% bet amount as real money only here",
+        "color": "from-services"
+    },
+    {
+        "id": "2",
+        "img": "/Rounded Rectangle 2.png",
+        "title": "Coming Soon",
+        "description": "retrieve 300% bet amount as real money only here",
+        "color": "from-services-orange"
+    },
+    {
+        "id": "3",
+        "img": "/Rounded Rectangle 3.png",
+        "title": "Win a Jackpot",
+        "description": "retrieve 300% bet amount as real money only here",
+        "color": "from-services-purple"
+    },
+    {
+        "id": "4",
+        "img": "/Rounded Rectangle 1.png",
+        "title": "Get 300% Cashback",
+        "description": "retrieve 300% bet amount as real money only here",
+        "color": "from-services"
+    }
+]

@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom'
 import PopupHeader from './PopupHeader'
 import Navigator from './Navigator'
 import Container from './Container'
+import Additional from './Additional'
+import Rules from './Rules'
+import Similar from './Similar'
+import Play from './Play'
 
 const MODAL_STYLES = {
     position: "fixed",
@@ -11,8 +15,10 @@ const MODAL_STYLES = {
     transform: "translate(-50%, -50%)",
     backgroundColor: "#1C1D1E",
     width: "55vw",
+    height: "90%",
     // padding: "16px 43px",
-    zIndex: 1000
+    zIndex: 1000,
+    overflow:"auto"
 }
 
 export default function Modal({children, open, onClose}) {
@@ -25,12 +31,20 @@ export default function Modal({children, open, onClose}) {
             <div style={MODAL_STYLES} className='rounded-xl'>
 
                 <PopupHeader onClose={onClose}/>
+                
                 <div className='px-[2.3vw] py-[1.7vw]'>
-                    <Navigator page={page} setPage={setPage}/>
-                    <Container />
+                    <div>
+                        <Navigator page={page} setPage={setPage}/>
+                        <Container />
+                    </div>
+
+                    <Additional />
+                    <Rules />
+                    <Similar />
+   
                 </div>
 
-                {children}
+                <Play />
             </div>
         </>,
         document.getElementById('portal')
