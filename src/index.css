@@ -19,3 +19,26 @@ code {
 .filter-white{
   filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(246deg) brightness(103%) contrast(105%);
 }
+
+/* ScrollBar Styling */
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #2C3234; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #F05A22; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #F05A22; 
+}

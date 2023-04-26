@@ -15,7 +15,7 @@ export default function Similar() {
             მსგავსი აქციები
         </h1>
 
-        <div className='flex gap-3 max-w-full overflow-auto scrollbar-hide'>
+        <div className='flex gap-3 max-w-full overflow-x-auto scrollbar-hide'>
             {ServicesItems}
         </div>
     </div>

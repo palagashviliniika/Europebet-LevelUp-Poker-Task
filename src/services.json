@@ -26,5 +26,11 @@
         "title": "Get 300% Cashback",
         "description": "retrieve 300% bet amount as real money only here",
         "color": "from-services"
+    },{
+        "id": "4",
+        "img": "/Rounded Rectangle 1.png",
+        "title": "Get 300% Cashback",
+        "description": "retrieve 300% bet amount as real money only here",
+        "color": "from-services"
     }
 ]

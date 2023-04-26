@@ -26,7 +26,7 @@ export default function LeaderboardContainer() {
                     პრიზი
                 </p>
             </div>
-            <div className='flex flex-col items-center mt-[1vw] mx-[1.7vw] gap-1 max-h-[20.5vw] overflow-y-scroll scroll-smooth'>
+            <div className='flex flex-col items-center mt-[1vw] mx-[1.7vw] gap-1 max-h-[20.5vw] overflow-y-scroll scroll-smooth pr-5'>
                 {leaderboardItems}
             </div>
         </div>
